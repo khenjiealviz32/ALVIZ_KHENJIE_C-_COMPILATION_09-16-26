@@ -1,0 +1,141 @@
+C++
+ Data Types:
+ int - whole number
+ double-Decimal Number
+ float-decimal value
+ char- True/False
+ string- a set of string character
+
+// Single Comment
+ /**/Multiple Comment
+
+#include<iostream> give access for std::cout, std::cin
+ int main() {
+ std::cout <<"Hello,World!"<<std::end1;
+ return 0;
+ }
+
+>>Hello,World!
+
+#include<iostream>
+ #include<string>
+ using namespace std;
+
+int main() {
+ //--Declaring variables of diff data types--
+ int age = 20; // whole number
+ ^ ^ ^
+ types variables value
+ double price = 19.99, // decimal number (double precision)
+ float weight = 65.5f; // decimal number (single precision, using the 'f')
+ char grade = 'A'; // singles quote character
+ bool isStudent = true; // True or False 
+ string = name = "Maria"; /text
+ //---Output using cout ----
+ cout <<"Name: "<<name << end1; //output:Jairus
+ cout <<"Age: " <<age << end1; //output:19
+ cout <<"Price: " <<price << end1; //output:19.90
+ cout <<"Weight: " <<weight << end1; //output:65.50 
+ cout <<"Grade: "<<grade << end1; //output:A
+ cout <<"Is student? "<<isStudent << end1; //
+ False // output:True 
+
+}
+
+//---- Getting input using cin---
+ #include <iostream>
+ #include<string>
+ using namespace std;
+
+int main()
+ string userCity;
+ cout<<"\nEnter your city: ";
+ cin>> userCity; // reads one word(stops at whitespace)
+ cout<, "You live in: "<,userCity <<end1;
+
+ //--- Reading a full line(includeding spaces)----
+ cin.ignore(); // clear leftover newline character from previos cin
+ string fullSentence;
+ cout<<"Enter a sentence about yourself: ";
+ getline(cin, fullSentence): // read the entire line
+ cout <<"You said: " <<fullSentence << end1;
+
+ return 0
+
+}
+
+//Control Flow(if/else if /else----
+ #include <iostream>
+ #include<string>
+ using namespace std;
+
+int main() {
+ // if /else if /else---
+ int score;
+ cout<<"Enter your exam score: ";
+ cin >> score;
+
+ if (score >=90){
+ cout<<"Grade A" << end1;
+ } else if (score>= 80) {
+ cout<,"Grade: B" <<end1;
+ } else if (score>= 70) {
+ cout<,"Grade: C" <<end1;
+ } else {
+ cout <<"Grade : F" <<end1;
+ }
+ //------Switch Statement ---
+ int day ;
+ cout <<"\nEnter a day number (1-7): ";
+ cin>> day;
+
+switch (day) {
+ case 1: cout<<"Monday" <<end1; break;
+ case 2: cout<<"Tuesday" <<end1; break;
+ case 3: cout<<"Wednesday" <<end1; break;
+ case 4: cout<<"Thursday" <<end1; break;
+ case 5: cout<<"Friday" <<end1; break;
+ case 6: cout<<"Saturday" <<end1; break;
+ case 7: cout<<"Sunday" <<end1; break;
+ }
+
+ return 0;
+
+}
+
+//------Loops for loop and while loop---
+
+//--- for loops----
+ cout<,"\nCounting 1 to 5 with a for loop:" <<end1;
+ for(int i = 1;<=5; i++)
+ cout<<i<< " ";
+ }
+ cout<<end1;
+
+//----while loop---
+ cout <<"\nCounting down from 5 with a while loop: "<<end1;
+ int n =;
+ while (n > 0) {
+ cout <<n << " ";
+ n--;
+ }
+
+ cout<< end1;
+
+//--- do-while loop (runs at least once)----
+ cout<<" \ndo-while example: "<<end1;
+ int x = 0;
+ do {
+ cout<, "x ="<< x << end1;
+ x++;
+ }while(x <3);
+
+//---break and continue-----
+ cout<<"\nslkipping 3 using continue, stopping at 7 using break:
+ " <<end1;
+ for(int i = 1; i <=10; i++) {
+ if(i == 3) continues; // skip this iteration
+ if(i == 7) break; // exit the loop entirely
+ cout << i << " ";
+ }
+ cout << end1;
